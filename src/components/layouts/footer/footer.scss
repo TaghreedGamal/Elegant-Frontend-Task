@@ -1,0 +1,72 @@
+@import '../../../colors.scss';
+
+.footer{
+    &-container{
+        &_rows{
+            display: flex;
+            justify-self: space-between;
+            padding: 60px 80px;
+            background-color: #fff;
+            .row{
+                width: 20%;
+                padding: 0 20px;
+                ul{
+                    padding: 0;
+                }
+                h1{
+                    font-size: 30px;
+                    color:$dark-blue;
+                }
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    color: $indigo;
+                    padding: 5px 0;
+                    font-family: "medium-font";
+                }
+                .icons{
+                    width: 80%;   
+                }
+                p{
+                    font-family: "medium-font";
+                    width: 80%;
+                    font-size: 16px;
+                    color: $indigo;
+                }
+                &:first-child{
+                    width: 30%;
+                    text-align: justify;
+                    padding: 0;
+                    padding-right: 40px;
+                    @media screen and (max-width: 48em){
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+                @media screen and (max-width: 48em){
+                    width:100%;
+                }
+            }
+            @media screen and (max-width: 48em){
+                flex-wrap: wrap;
+                align-items: center;
+                padding: 30px;
+            }
+        }
+        &_copyrights{
+            padding:20px 80px;
+            p{
+                font-size: 16px;
+                font-family: "medium-font";
+                color: $dark-blue;
+                text-align: center;
+                span{
+                    color: $blue;
+                }
+            }
+            a{
+                color: red;
+            }
+        }
+    }
+}

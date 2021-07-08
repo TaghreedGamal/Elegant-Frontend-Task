@@ -1,0 +1,94 @@
+@import '../../../colors.scss';
+@import '../../../fonts.scss';
+
+.react-tabs{
+    display: flex !important;
+    justify-content: space-between;
+    @media screen and (max-width:40em) {flex-wrap: wrap;}
+    &__tab-list{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        padding-bottom: 50px;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px #c0c1c76e;
+        height: fit-content;
+        @media screen and (max-width:40em) {
+            width: 100%;
+            margin-bottom: 0;
+            padding: 30px 10px;
+            overflow-x: auto;
+            flex-direction: row;
+            align-items: baseline;
+            height: fit-content;
+        }
+        button{
+            background-color: transparent;
+            outline: none;
+        }
+    }
+    &__tab{
+        display: flex;
+        margin: 20px 30px -5px;
+        padding: 15px;
+        width: 70%;
+        color: $dark-blue;
+        @media screen and (max-width:40em) {margin: 10px;}
+        &--selected{
+            background: $blue;
+            color: #fff !important;
+            border-radius: 10px;
+        }
+        .tab-content{
+            display: flex;
+            align-items: end !important;
+            &-title{
+                font-size: 18px;
+                font-family: "regular-font";
+                @media screen and (max-width:40em) { text-align: center;}
+            }
+            &-icon{
+                margin-right: 20px;
+                @media screen and (max-width:40em) {  margin-right: 0px;}
+            }
+            @media  screen and (max-width:48em){
+                flex-direction: column;
+                align-items: center !important;
+            }
+        }
+        &-panel{
+            width: 70%;
+            @media screen and (max-width:40em) { width: 100%;}
+        }
+    }
+    .user-info{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 14px;
+            font-family: "bold-font";
+            color: $blue;
+            margin: 5px;
+            &.store{
+                color:$dark-blue;
+                font-size: 12px;
+                font-family: "medium-font";
+                display: flex;
+                align-items: baseline;
+            }
+        }
+        &.mobile{
+            margin: auto;
+            flex-direction: row;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $dark-blue;
+        font-size: 18px;
+    }
+}

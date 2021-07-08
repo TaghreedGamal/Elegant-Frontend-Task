@@ -1,0 +1,47 @@
+@import '../../../colors.scss';
+@import '../../../fonts.scss';
+
+.analysis-page{
+    &_section{
+        .title{
+            font-size: 30px;
+            color: $dark-blue;
+        }
+        .boxex{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &_box{
+                display: flex;
+                align-items: center;
+                width: 20%;
+                padding: 20px 10px;
+                border-radius: 10px;
+                border: 2px solid #bfc5dc;
+                box-shadow: 2px 4px 8px 0px #e0e7fb6b;
+                margin-top:10px;
+                margin-bottom: 20px;
+                .number{
+                    font-size: 24px;
+                    color: #000;
+                }
+                .txt{
+                    font-size: 16px;
+                    color: $tabs-cont;
+                }
+                .number,.txt{
+                    margin: 0;
+                    padding: 0;
+                    @media screen and (max-width:40em) {  
+                        text-align: center;
+                    }
+                }
+                @media screen and (max-width:40em) {  
+                    width: 35%;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

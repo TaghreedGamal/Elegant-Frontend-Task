@@ -1,0 +1,20 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+body{
+    background-color: $bgColor;
+    margin: 0;
+    font-family: "regular-font";
+}
+h1,h2,h3,h4,h5{
+    font-family: "bold-font";
+}
+.warningMsg{
+    color: red;
+    text-align: center;
+}
+.page{
+    text-align: center;
+    color: $dark-blue;
+    padding: 50px;
+    font-size: 40px;
+}
